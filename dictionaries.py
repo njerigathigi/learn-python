@@ -211,6 +211,13 @@ myfamily = {
   "child3" : child3
 }
 
+for data in myfamily:
+    print(data)
+    for child , year in data.items():
+        print(child)
+        print(year)
+        print()
+
 # Python has a set of built-in methods that you can use on dictionaries.
 
 # Method	Description
@@ -225,4 +232,3 @@ myfamily = {
 # setdefault()	Returns the value of the specified key. If the key does not exist: insert the key, with the specified value
 # update()	Updates the dictionary with the specified key-value pairs
 # values()	Returns a list of all the values in the dictionary
-
