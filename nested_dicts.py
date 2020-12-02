@@ -17,9 +17,9 @@ myfamily = {
   }
 }
 
-for data in myfamily:
+for person in myfamily:
     print('{0} is {1} born in the year {2}.'
-          .format(data, myfamily[data]['name'], myfamily[data]['year']))
+          .format(person, myfamily[person]['name'], myfamily[person]['year']))
 
 
 
@@ -47,6 +47,6 @@ myfamily = {
 
 print()
 
-for data in myfamily:
+for person in myfamily:
     print('{0} is {1} born in {2}.'
-         .format(data, myfamily[data]['name'],myfamily[data]['year']))
+         .format(person , myfamily[person ]['name'],myfamily[person ]['year']))
