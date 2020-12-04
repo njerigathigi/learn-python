@@ -131,3 +131,53 @@ print()
 
 for fruit in newset:
     print(fruit)
+print()
+ # There are several ways to join two or more sets in Python. 
+
+# You can use the union() method that returns a new set containing all items from both
+# or the update() method that inserts all the items from one set into another:
+
+set1 = {1, 2, 3, 4}
+set2 = {5, 6, 7, 8}
+
+set3 = set1.union(set2)
+print(set3)
+
+# The update() method inserts the items in set2 into set1:
+
+set4 = {9, 10, 11, 12}
+set5 = {'a', 'b', 'c', 'd'}
+
+set4.update(set5)
+print(set4)
+# Both union() and update() will exclude any duplicate items.
+
+# Keep ONLY the Duplicates
+# The intersection_update() method will keep only the items that are 
+# present in both sets.
+
+u = {'banana', 'apple', 'kiwi', 'papaya', 'orange'}
+t = {'pineapple', 'apple', 'orange', 'mango'}
+
+u.intersection_update(t)
+print(u)
+
+# The intersection() method will return a new set, that only 
+# contains the items that are present in both sets.
+
+z = u.intersection(t)
+print(z)
+
+
+# Keep All, But NOT the Duplicates
+# The symmetric_difference_update() method will keep only the elements 
+# that are NOT present in both sets.
+
+u.symmetric_difference_update(t)
+print(u)
+
+# The symmetric_difference() method will return a new set, that contains only the 
+# elements that are NOT present in both sets.
+
+w  = u.symmetric_difference(t)
+print(w)
