@@ -7,10 +7,9 @@
 # Use a Module
 # we can use the module we just created, by using the import statement
 
+import mymodule
 
-# import mymodule as mx
-
-# mymodule.greeting('Njeri')
+# mymodule.greeting('Njeri')  #try with int
 # When using a function from a module, use the syntax: module_name.function_name.
 
 # Variables in Module
@@ -25,7 +24,8 @@
 #.py indicates that its a python file
 
 # Re-naming a Module
-# You can create an alias when you import a module, by using the as keyword
+# You can create an alias when you import a module, by using the as keyword:
+# import mymodule as mx
 
 # age = mx.person1['age']
 # print(age)

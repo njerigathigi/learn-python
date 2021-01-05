@@ -1,5 +1,5 @@
 def greeting(name):
-    print('Hello, ' + name)
+    print('Hello, ' + name + '.')
 
 person1 = {
     'name': 'Jonathan',
