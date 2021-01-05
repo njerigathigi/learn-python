@@ -17,7 +17,7 @@
 # Sort numeric:
 
 a = (1, 11, 2)
-x = sorted(a) #a is a tuple.its immutable thus the reassignment to x
+x = sorted(a) 
 print(x)
 
 # Sort ascending:

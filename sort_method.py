@@ -1,5 +1,5 @@
 # The sort() method sorts the list ascending by default.
-# The sort() method sorts the list ascending by default.
+
 
 #syntax
 # list.sort(reverse=True|False, key=myFunc)
