@@ -20,3 +20,28 @@ print(functools.reduce(lambda a, b: a + b, lis))
 #using reduce to compute maximum element from a list
 print("The maximum item in the list is : ", end = "")
 print(functools.reduce(lambda a, b: a if a > b else b, lis))
+
+# Using Operator Functions
+# reduce() can also be combined with operator functions to achieve the similar 
+# functionality as with lambda functions and makes the code more readable.
+
+
+import functools #for reduce
+import operator  #for operator functions
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+#sum
+
+print('The sum of numbers is: ', end = '')
+print(functools.reduce(operator.add, numbers))
+
+#product
+
+print('The product of numbers is: ', end = '')
+print(functools.reduce(operator.mul, numbers))
+
+#using reduce to concatenate string
+
+print('THe concatenated product is: ', end = '')
+print(functools.reduce(operator.add, ['fiona', 'FIFI', 'fiona']))
